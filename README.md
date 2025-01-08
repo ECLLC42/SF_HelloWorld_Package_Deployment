@@ -68,7 +68,7 @@ touch force-app/main/default/lwc/.eslintrc.json
 
 ## Component Creation
 
-1. Create HelloWorld Component:
+1. Create helloWorld.js
 
 ```javascript:force-app/main/default/lwc/helloWorld/helloWorld.js
 import { LightningElement } from 'lwc';
@@ -77,6 +77,7 @@ export default class HelloWorld extends LightningElement {
     greeting = 'World';
 }
 ```
+2. Create helloWorld.html
 
 ```html:force-app/main/default/lwc/helloWorld/helloWorld.html
 <template>
@@ -88,6 +89,8 @@ export default class HelloWorld extends LightningElement {
 </template>
 ```
 
+3. Create helloWorld.js-meta.xml
+   
 ```xml:force-app/main/default/lwc/helloWorld/helloWorld.js-meta.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -100,6 +103,8 @@ export default class HelloWorld extends LightningElement {
 </LightningComponentBundle>
 ```
 
+4. Create package.xml
+
 ```xml:force-app/main/default/lwc/package.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -110,6 +115,26 @@ export default class HelloWorld extends LightningElement {
     <version>59.0</version>
 </Package>
 ```
+
+5. Create eslintrc.json
+
+```
+{
+  "extends": ["@salesforce/eslint-config-lwc/recommended"],
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "rules": {
+        "@lwc/lwc/no-unexpected-wire-adapter-usages": "off"
+      },
+      "env": {
+        "node": true
+      }
+    }
+  ]
+}
+```
+
 
 ## Deployment Steps
 
