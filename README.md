@@ -3,10 +3,11 @@
 
 ## Project Setup
 
-1. Create Project Structure:
+1. Create Project & Project Structure:
 ```bash
 mkdir MikeTest
 cd MikeTest
+sf project generate --name MikeTest --template empty
 ```
 
 2. Create Initial Configuration Files:
