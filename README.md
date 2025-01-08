@@ -50,8 +50,7 @@ sf project generate --name MikeTest --template empty
 
 Create the HelloWorld component directory
 
-1.
-```mkdir -p force-app/main/default/lwc/helloWorld
+1.```mkdir -p force-app/main/default/lwc/helloWorld
 ```
 
 3. Create the component files
