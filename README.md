@@ -50,10 +50,8 @@ sf project generate --name MikeTest --template empty
 
 Create the HelloWorld component directory
 
-1.
-```mkdir -p force-app/main/default/lwc/helloWorld```
-   
-```
+1. Create the directory
+   ```mkdir -p force-app/main/default/lwc/helloWorld```
 
 3. Create the component files
 
@@ -63,9 +61,10 @@ touch force-app/main/default/lwc/helloWorld/helloWorld.js-meta.xml
 ```
 
 3. Create the package.xml and eslintrc
-
+```
 touch force-app/main/default/lwc/package.xml
 touch force-app/main/default/lwc/.eslintrc.json
+```
 
 ## Component Creation
 
