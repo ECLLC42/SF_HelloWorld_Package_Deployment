@@ -12,10 +12,5 @@
   "name": "MyLWCComponents",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "59.0",
-  "packageAliases": {
-    "MyLWCComponents": "0Hoaj0000000JkDCAU",
-    "MyLWCComponents@0.1.0-1": "04taj0000005EYbAAM",
-    "MyLWCComponents@0.1.0-2": "04taj0000005EbpAAE"
-  }
+  "sourceApiVersion": "59.0"
 }
